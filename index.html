@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Encontre o plano de saúde ideal para você, sua família ou sua empresa com a + Saúde. Atendimento personalizado e as melhores operadoras do mercado em um só lugar.">
+  <title>+ Saúde | Planos de Saúde</title>
+
+  <!-- Google Fonts: Poppins (600, 700) e Inter (400, 500, 600) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Folha de Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =======================================================
+       1. CABEÇALHO
+       ======================================================= -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Esquerda: Logo -->
+      <a href="#header" class="logo-link" aria-label="Página inicial + Saúde">
+        <div class="logo-wrapper">
+          <img src="assets/images/logo-maissaude.png" alt="+ Saúde - Corretora de Planos" class="logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+          <div class="logo-fallback placeholder-hidden">
+            <div class="logo-symbol">
+              <span class="cross-icon">+</span>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title">+ Saúde</span>
+              <span class="logo-subtitle">CORRETORA DE PLANOS</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Centro: Links de Navegação -->
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#planos" class="nav-link">Tipos de Plano</a>
+          </li>
+          <li class="nav-item">
+            <a href="#operadoras" class="nav-link">Operadoras</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Direita: Botão CTA -->
+      <div class="header-cta">
+        <a href="#simule" class="btn btn-primary">SIMULE SEU PLANO</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================
+         2. BANNER PRINCIPAL (HERO)
+         ======================================================= -->
+    <section class="hero-section" id="banner">
+      <div class="container hero-container">
+        <!-- Coluna Esquerda: Textos e CTA -->
+        <div class="hero-content">
+          <h1 class="hero-title">O melhor plano de saúde para você!</h1>
+          <p class="hero-description">
+            Encontre as opções ideais para você, sua família ou sua empresa.
+          </p>
+
+          <!-- Tópicos com Checkmarks minimalistas -->
+          <ul class="hero-checklist">
+            <li class="checklist-item">
+              <span class="check-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>Planos para diferentes perfis</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>Atendimento personalizado</span>
+            </li>
+            <li class="checklist-item">
+              <span class="check-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>Diversas operadoras em um só lugar</span>
+            </li>
+          </ul>
+
+          <div class="hero-action">
+            <a href="#simule" class="btn btn-primary btn-large">SIMULE SEU PLANO</a>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Imagem da Família -->
+        <div class="hero-media">
+          <div class="banner-image-container">
+            <img src="assets/images/familia-banner.png" alt="Família acolhedora reunida em ambiente residencial" class="banner-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+            <div class="banner-placeholder placeholder-hidden" aria-label="Espaço reservado para foto da família">
+              <div class="placeholder-icon-wrapper">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#176B73" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <p class="placeholder-tag">Foto Oficial de Família</p>
+              <span class="placeholder-caption">assets/images/familia-banner.png</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         3. TIPOS DE PLANO
+         ======================================================= -->
+    <section class="plans-section" id="planos">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Cuidado que acompanha suas escolhas</h2>
+        </div>
+
+        <div class="plans-grid">
+          <!-- Card 1: Individual -->
+          <article class="plan-card">
+            <div class="plan-icon-container">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#176B73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="plan-card-title">Individual</h3>
+            <p class="plan-card-desc">
+              Planos sob medida com ampla cobertura e liberdade de escolha para você cuidar do seu bem-estar com total tranquilidade.
+            </p>
+            <div class="plan-card-action">
+              <button type="button" class="btn btn-secondary btn-plan-select" data-plan="Individual">CONHECER</button>
+            </div>
+          </article>
+
+          <!-- Card 2: Familiar -->
+          <article class="plan-card">
+            <div class="plan-icon-container">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#176B73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="plan-card-title">Familiar</h3>
+            <p class="plan-card-desc">
+              Proteção integral pensada para garantir a saúde e a segurança de quem você mais ama, em todas as etapas da vida.
+            </p>
+            <div class="plan-card-action">
+              <button type="button" class="btn btn-secondary btn-plan-select" data-plan="Familiar">CONHECER</button>
+            </div>
+          </article>
+
+          <!-- Card 3: Pequenas/Médias Empresas -->
+          <article class="plan-card">
+            <div class="plan-icon-container">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#176B73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <path d="M9 22v-4h6v4"></path>
+                <path d="M8 6h.01"></path>
+                <path d="M16 6h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M16 10h.01"></path>
+                <path d="M8 14h.01"></path>
+                <path d="M16 14h.01"></path>
+              </svg>
+            </div>
+            <h3 class="plan-card-title">Pequenas/Médias Empresas</h3>
+            <p class="plan-card-desc">
+              Soluções inteligentes e vantajosas para valorizar seus colaboradores e impulsionar a produtividade da sua equipe.
+            </p>
+            <div class="plan-card-action">
+              <button type="button" class="btn btn-secondary btn-plan-select" data-plan="Pequenas/Médias Empresas">CONHECER</button>
+            </div>
+          </article>
+
+          <!-- Card 4: Empresarial -->
+          <article class="plan-card">
+            <div class="plan-icon-container">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#176B73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"></path>
+                <path d="M18 10h4v12h-4"></path>
+                <path d="M2 14h4v8H2"></path>
+                <path d="M10 6h4"></path>
+                <path d="M10 10h4"></path>
+                <path d="M10 14h4"></path>
+                <path d="M10 18h4"></path>
+              </svg>
+            </div>
+            <h3 class="plan-card-title">Empresarial</h3>
+            <p class="plan-card-desc">
+              Gestão estratégica de benefícios para grandes corporações, com redes credenciadas completas e atendimento consultivo.
+            </p>
+            <div class="plan-card-action">
+              <button type="button" class="btn btn-secondary btn-plan-select" data-plan="Empresarial">CONHECER</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         4. CTA INTERMEDIÁRIO
+         ======================================================= -->
+    <section class="cta-mid-section" id="cta-intermediario">
+      <div class="container cta-mid-container">
+        <div class="cta-mid-text">
+          <h2 class="cta-mid-title">Sua saúde merece a escolha certa.</h2>
+          <p class="cta-mid-description">Encontre uma opção que combine com suas necessidades.</p>
+        </div>
+        <div class="cta-mid-action">
+          <a href="#simule" class="btn btn-primary btn-large">SIMULE SEU PLANO</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         5. OPERADORAS
+         ======================================================= -->
+    <section class="operators-section" id="operadoras">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Trabalhamos com as principais operadoras de saúde</h2>
+        </div>
+
+        <div class="operators-grid">
+          <!-- Operadora 1 -->
+          <div class="operator-card">
+            <img src="assets/images/operadoras/bradesco-saude.png" alt="Bradesco Saúde" class="operator-logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+            <div class="operator-placeholder placeholder-hidden">
+              <span class="operator-name">Bradesco Saúde</span>
+            </div>
+          </div>
+
+          <!-- Operadora 2 -->
+          <div class="operator-card">
+            <img src="assets/images/operadoras/unimed.png" alt="Unimed" class="operator-logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+            <div class="operator-placeholder placeholder-hidden">
+              <span class="operator-name">Unimed</span>
+            </div>
+          </div>
+
+          <!-- Operadora 3 -->
+          <div class="operator-card">
+            <img src="assets/images/operadoras/porto-seguro.png" alt="Porto Seguro" class="operator-logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+            <div class="operator-placeholder placeholder-hidden">
+              <span class="operator-name">Porto Seguro</span>
+            </div>
+          </div>
+
+          <!-- Operadora 4 -->
+          <div class="operator-card">
+            <img src="assets/images/operadoras/sulamerica.png" alt="SulAmérica" class="operator-logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+            <div class="operator-placeholder placeholder-hidden">
+              <span class="operator-name">SulAmérica</span>
+            </div>
+          </div>
+
+          <!-- Operadora 5 -->
+          <div class="operator-card">
+            <img src="assets/images/operadoras/care-plus.png" alt="Care Plus" class="operator-logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+            <div class="operator-placeholder placeholder-hidden">
+              <span class="operator-name">Care Plus</span>
+            </div>
+          </div>
+
+          <!-- Operadora 6 -->
+          <div class="operator-card">
+            <img src="assets/images/operadoras/notredame-intermedica.png" alt="NotreDame Intermédica" class="operator-logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+            <div class="operator-placeholder placeholder-hidden">
+              <span class="operator-name">NotreDame Intermédica</span>
+            </div>
+          </div>
+
+          <!-- Operadora 7 -->
+          <div class="operator-card">
+            <img src="assets/images/operadoras/omint.png" alt="Omint" class="operator-logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+            <div class="operator-placeholder placeholder-hidden">
+              <span class="operator-name">Omint</span>
+            </div>
+          </div>
+
+          <!-- Operadora 8 -->
+          <div class="operator-card">
+            <img src="assets/images/operadoras/amil.png" alt="Amil" class="operator-logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+            <div class="operator-placeholder placeholder-hidden">
+              <span class="operator-name">Amil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         6. SIMULE SEU PLANO (FORMULÁRIO)
+         ======================================================= -->
+    <section class="simulation-section" id="simule">
+      <div class="container simulation-container">
+        <div class="form-card">
+          <div class="form-header">
+            <h2 class="form-title">SIMULE SEU PLANO</h2>
+          </div>
+
+          <!-- Feedback de Sucesso Front-End -->
+          <div class="form-feedback form-feedback-success" id="formSuccessFeedback" role="status" aria-live="polite" hidden>
+            Formulário validado com sucesso.
+          </div>
+
+          <form id="simulationForm" class="simulation-form" novalidate>
+            <!-- Campo 1: Nome -->
+            <div class="form-group">
+              <label for="userName" class="form-label">Nome</label>
+              <input type="text" id="userName" name="userName" class="form-input" placeholder="Digite seu nome completo" autocomplete="name">
+              <span class="form-error-msg" id="error-userName"></span>
+            </div>
+
+            <!-- Campo 2: Telefone/WhatsApp -->
+            <div class="form-group">
+              <label for="userPhone" class="form-label">Telefone/WhatsApp</label>
+              <input type="tel" id="userPhone" name="userPhone" class="form-input" placeholder="(11) 99999-9999" maxlength="15" autocomplete="tel">
+              <span class="form-error-msg" id="error-userPhone"></span>
+            </div>
+
+            <!-- Campo 3: E-mail -->
+            <div class="form-group">
+              <label for="userEmail" class="form-label">E-mail</label>
+              <input type="email" id="userEmail" name="userEmail" class="form-input" placeholder="exemplo@email.com" autocomplete="email">
+              <span class="form-error-msg" id="error-userEmail"></span>
+            </div>
+
+            <!-- Campo 4: Idade -->
+            <div class="form-group">
+              <label for="userAge" class="form-label">Idade</label>
+              <input type="number" id="userAge" name="userAge" class="form-input" placeholder="Ex: 35" min="0" max="120">
+              <span class="form-error-msg" id="error-userAge"></span>
+            </div>
+
+            <!-- Campo 5: Cidade -->
+            <div class="form-group">
+              <label for="userCity" class="form-label">Cidade</label>
+              <input type="text" id="userCity" name="userCity" class="form-input" placeholder="Ex: São Paulo" autocomplete="address-level2">
+              <span class="form-error-msg" id="error-userCity"></span>
+            </div>
+
+            <!-- Campo 6: Tipo de Plano -->
+            <div class="form-group">
+              <label for="planType" class="form-label">Tipo de Plano</label>
+              <div class="select-wrapper">
+                <select id="planType" name="planType" class="form-select">
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="Individual">Individual</option>
+                  <option value="Familiar">Familiar</option>
+                  <option value="Pequenas/Médias Empresas">Pequenas/Médias Empresas</option>
+                  <option value="Empresarial">Empresarial</option>
+                </select>
+              </div>
+              <span class="form-error-msg" id="error-planType"></span>
+            </div>
+
+            <!-- Botão de Ação -->
+            <div class="form-action">
+              <button type="submit" class="btn btn-primary btn-submit">SOLICITAR COTAÇÃO</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================
+       7. RODAPÉ
+       ======================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <!-- Coluna 1: Logo e Direitos Reservados -->
+      <div class="footer-col footer-col-left">
+        <div class="footer-logo-wrapper">
+          <img src="assets/images/logo-maissaude.png" alt="+ Saúde - Corretora de Planos" class="footer-logo-img" onerror="this.classList.add('img-hidden'); this.nextElementSibling.classList.remove('placeholder-hidden');">
+          <div class="logo-fallback logo-fallback-light placeholder-hidden">
+            <div class="logo-symbol">
+              <span class="cross-icon">+</span>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title">+ Saúde</span>
+              <span class="logo-subtitle">CORRETORA DE PLANOS</span>
+            </div>
+          </div>
+        </div>
+        <p class="copyright-text">© 2026, Mais Saúde, todos os direitos reservados.</p>
+      </div>
+
+      <!-- Coluna 2: Contato -->
+      <div class="footer-col footer-col-center">
+        <h3 class="footer-heading">CONTATO</h3>
+        <ul class="footer-contact-list">
+          <li class="contact-item">
+            <a href="tel:11947524271" class="contact-link">(11) 94752-4271</a>
+          </li>
+          <li class="contact-item">
+            <a href="mailto:contato@maissaude.com.br" class="contact-link">contato@maissaude.com.br</a>
+          </li>
+          <li class="contact-item address-item">
+            <span>Rua Diogenes Ribas Aguiar, 224</span>
+            <span>Mogi das Cruzes - SP</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Redes Sociais -->
+      <div class="footer-col footer-col-right">
+        <h3 class="footer-heading">REDES SOCIAIS</h3>
+        <div class="social-icons-wrapper">
+          <!-- Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da + Saúde">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn da + Saúde">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook da + Saúde">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+
+          <!-- TikTok -->
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok da + Saúde">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+          </a>
+
+          <!-- X (Twitter) -->
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X da + Saúde">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script da Aplicação Front-End -->
+  <script src="js/script.js"></script>
+</body>
+</html>
